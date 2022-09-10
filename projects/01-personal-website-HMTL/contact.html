@@ -8,9 +8,31 @@
   </head>
   <body>
     <h3>My Contact Details</h3>
-    <p>LinkedIn Profile <a target="_blank" href="https://www.linkedin.com/in/tulio-minini/">here</a></p>
-    <p>GitHub Profile <a target="_blank" href="https://github.com/t-minini">here</a></p>
-    <p>Send me an email <a target="_blank" href="mailto:tulio.mminini@gmail.com">here</a></p>
+    <p>
+      LinkedIn Profile
+      <a target="_blank" href="https://www.linkedin.com/in/tulio-minini/"
+        >here</a
+      >
+    </p>
+    <p>
+      GitHub Profile
+      <a target="_blank" href="https://github.com/t-minini">here</a>
+    </p>
+    <hr noshade />
+
+    <form
+      action="mailto:tulio.mminini@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label>Your Name:</label>
+      <input type="text" name="yourName" /><br />
+      <label>Your Email:</label>
+      <input type="email" name="yourEmail" id="" /><br />
+      <label>Your Message:</label><br />
+      <textarea name="yourMessage" id="" cols="30" rows="10"></textarea><br />
+      <input type="submit" />
+    </form>
     <a href="index.html">back to main page</a>
   </body>
 </html>
