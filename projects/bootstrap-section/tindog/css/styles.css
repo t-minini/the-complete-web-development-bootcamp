@@ -1,21 +1,22 @@
 body {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
 }
 
 #title {
   background-color: #ff4c68;
   color: #fff;
+  text-align: left;
 }
 
 .container-fluid {
-  padding: 3% 15%;
-}
-
-h1 {
-  font-family: "Montserrat", sans-serif;
-  size: 3.5rem;
-  line-height: 1.5;
-  font-weight: 900;
+  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -36,7 +37,6 @@ h1 {
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
 
@@ -49,18 +49,21 @@ h1 {
 /* Title Image */
 
 .title-image {
-  width: 60%;
+  width: 18%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* Features Section */
 
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
 }
 
 #features h3 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   margin-top: 1.25rem;
   size: 1.5rem;
@@ -69,7 +72,6 @@ h1 {
 #features p {
   color: #8f8f8f;
   padding: 0 10%;
-  /* margin-bottom: 6.25rem; */
 }
 
 .feature-icon {
@@ -89,8 +91,7 @@ h1 {
   color: #fff;
 }
 
-h2 {
-  font-family: "Montserrat", sans-serif;
+#testimonials h2 {
   font-weight: bold;
   margin-top: 3rem;
   line-height: 1.5;
@@ -117,4 +118,67 @@ h2 {
 #press img {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+#pricing h2 {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+#pricing h3 {
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 995px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    width: 60%;
+  }
+}
+
+/* Call to Action */
+
+#cta {
+  background-color: #ff4c68;
+  padding: 7% 15%;
+}
+
+#cta h3 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+  padding: 0 4.375rem 0 4.375rem;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #fff;
+  padding: 10% 10%;
+}
+
+#footer a {
+  margin: 1%;
+  color: black;
+}
+
+#footer p {
+  color: #8f8f8f;
+  margin-top: 1%;
 }
